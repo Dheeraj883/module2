@@ -5,7 +5,7 @@ import 'package:ui_1/data/experiment_data.dart';
 import 'package:ui_1/data/termwork_data.dart';
 class AddTaskScreen extends StatefulWidget {
   final String title;
-  String taskType;
+  final String taskType;
 
 
 

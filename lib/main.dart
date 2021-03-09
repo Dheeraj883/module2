@@ -3,6 +3,7 @@ import 'package:ui_1/data/assignment_data.dart';
 import 'package:ui_1/data/unittest_data.dart';
 import 'package:ui_1/data/experiment_data.dart';
 import 'package:ui_1/data/termwork_data.dart';
+import 'package:ui_1/data/student_data.dart';
 import 'package:ui_1/screens/termwork.dart';
 import 'package:ui_1/screens/unit_test.dart';
 import 'screens/experiment.dart';
@@ -31,6 +32,9 @@ class MyApp extends StatelessWidget {
           ),
           ChangeNotifierProvider<TermWorkData>(
             create : (context) => TermWorkData(),
+          ),
+          ChangeNotifierProvider<StudentData>(
+            create : (context) => StudentData(),
           ),
         ],
 

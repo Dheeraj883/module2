@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_1/components/experiment_list.dart';
 import 'package:ui_1/screens/add_task.dart';
-import 'package:ui_1/components/experiment_list.dart';
 
 class ExperimentPage extends StatefulWidget {
   static const String id = 'experiment_page';
