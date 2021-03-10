@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ui_1/data/data_type.dart';
+import 'package:ui_1/data/student_data.dart';
+import 'package:provider/provider.dart';
 
 class StudentMarksCard extends StatefulWidget {
   final String name;
@@ -36,7 +39,7 @@ class _StudentMarksCardState extends State<StudentMarksCard> {
       onChanged: (value) {
         setState(() {
           marks = value;
-
+          Provider.of<StudentData>(context).updateMarks(Student(name: widget.name, rollNumber: widget.rollNo,marks: value));
         });
       },
     );

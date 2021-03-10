@@ -20,5 +20,11 @@ class StudentData extends ChangeNotifier {
     return _students.length;
   }
 
+  void updateMarks(Student student) {
+    int index = _students.indexWhere((note) => note.name==student.name);
+    _students[index]= student;
+    notifyListeners();
+  }
+
 
 }

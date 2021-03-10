@@ -40,7 +40,7 @@ class TermWork {
 }
 
 class Student {
-  final String name;
+   String name;
   final int rollNumber;
   int marks;
   Student({this.name, this.rollNumber,this.marks});

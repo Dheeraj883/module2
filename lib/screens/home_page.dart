@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage>
                           height: 30.0,
                         ),
                         Text(
-                          'All Notes',
+                          'All Examinations',
                           style: TextStyle(
                             fontSize: 30.0,
                             color: Colors.teal[900],
@@ -53,7 +53,11 @@ class _HomePageState extends State<HomePage>
                         ),
                         Padding(
                             padding: EdgeInsets.fromLTRB(5.0, 0.0, 0.0, 0.0),
-                            child: Text('Every notes you wrote')),
+                            child: Text('Assign marks from here',
+                              style: TextStyle(
+                                fontSize: 20.0
+                              ),
+                            ),),
                       ],
                     ),
                   ),
@@ -96,6 +100,10 @@ class _HomePageState extends State<HomePage>
                                     padding:
                                         EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
                                     child: ReusableCard(
+                                      subjectName: 'SPA',
+                                      className: 'F.E.',
+                                      division: 'Div C',
+                                      timing: '10:15-11:15',
                                       colour: Colors.indigo[700],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, UnitTestPage.id);
@@ -108,6 +116,10 @@ class _HomePageState extends State<HomePage>
                                     padding:
                                         EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
                                     child: ReusableCard(
+                                      subjectName: 'Java',
+                                      className: 'S.E.',
+                                      division: 'Div A',
+                                      timing: '11:15-12:15',
                                       colour: Colors.indigo[900],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, UnitTestPage.id);
@@ -124,6 +136,10 @@ class _HomePageState extends State<HomePage>
                                     padding:
                                         EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
                                     child: ReusableCard(
+                                      subjectName: 'ML',
+                                      className: 'T.E.',
+                                      division: 'Div A',
+                                      timing: '12:15-1:15',
                                       colour: Colors.blue,
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, UnitTestPage.id);
@@ -136,6 +152,10 @@ class _HomePageState extends State<HomePage>
                                     padding:
                                         EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
                                     child: ReusableCard(
+                                      subjectName: 'AI',
+                                      className: 'B.E.',
+                                      division: 'Div C',
+                                      timing: '2:00-3:00',
                                       colour: Colors.tealAccent[400],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, UnitTestPage.id);
@@ -160,8 +180,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
+                                    EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
                                     child: ReusableCard(
+                                      subjectName: 'SPA',
+                                      className: 'F.E.',
+                                      division: 'Div C',
+                                      timing: '10:15-11:15',
                                       colour: Colors.indigo[700],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, AssignmentPage.id);
@@ -172,8 +196,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
+                                    EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
                                     child: ReusableCard(
+                                      subjectName: 'Java',
+                                      className: 'S.E.',
+                                      division: 'Div A',
+                                      timing: '11:15-12:15',
                                       colour: Colors.indigo[900],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, AssignmentPage.id);
@@ -188,8 +216,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
+                                    EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
                                     child: ReusableCard(
+                                      subjectName: 'ML',
+                                      className: 'T.E.',
+                                      division: 'Div A',
+                                      timing: '12:15-1:15',
                                       colour: Colors.blue,
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, AssignmentPage.id);
@@ -200,8 +232,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
+                                    EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
                                     child: ReusableCard(
+                                      subjectName: 'AI',
+                                      className: 'B.E.',
+                                      division: 'Div C',
+                                      timing: '2:00-3:00',
                                       colour: Colors.tealAccent[400],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, AssignmentPage.id);
@@ -226,8 +262,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
+                                    EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
                                     child: ReusableCard(
+                                      subjectName: 'SPA',
+                                      className: 'F.E.',
+                                      division: 'Div C',
+                                      timing: '10:15-11:15',
                                       colour: Colors.indigo[700],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, ExperimentPage.id);
@@ -238,8 +278,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
+                                    EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
                                     child: ReusableCard(
+                                      subjectName: 'Java',
+                                      className: 'S.E.',
+                                      division: 'Div A',
+                                      timing: '11:15-12:15',
                                       colour: Colors.indigo[900],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, ExperimentPage.id);
@@ -254,8 +298,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
+                                    EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
                                     child: ReusableCard(
+                                      subjectName: 'ML',
+                                      className: 'T.E.',
+                                      division: 'Div A',
+                                      timing: '12:15-1:15',
                                       colour: Colors.blue,
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, ExperimentPage.id);
@@ -266,8 +314,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
+                                    EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
                                     child: ReusableCard(
+                                      subjectName: 'AI',
+                                      className: 'B.E.',
+                                      division: 'Div C',
+                                      timing: '2:00-3:00',
                                       colour: Colors.tealAccent[400],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, ExperimentPage.id);
@@ -292,8 +344,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
+                                    EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
                                     child: ReusableCard(
+                                      subjectName: 'SPA',
+                                      className: 'F.E.',
+                                      division: 'Div C',
+                                      timing: '10:15-11:15',
                                       colour: Colors.indigo[700],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, Termworkpage.id);
@@ -304,8 +360,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
+                                    EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
                                     child: ReusableCard(
+                                      subjectName: 'Java',
+                                      className: 'S.E.',
+                                      division: 'Div A',
+                                      timing: '11:15-12:15',
                                       colour: Colors.indigo[900],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, Termworkpage.id);
@@ -320,8 +380,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
+                                    EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
                                     child: ReusableCard(
+                                      subjectName: 'ML',
+                                      className: 'T.E.',
+                                      division: 'Div A',
+                                      timing: '12:15-1:15',
                                       colour: Colors.blue,
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, Termworkpage.id);
@@ -332,8 +396,12 @@ class _HomePageState extends State<HomePage>
                                 Expanded(
                                   child: Padding(
                                     padding:
-                                        EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
+                                    EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
                                     child: ReusableCard(
+                                      subjectName: 'AI',
+                                      className: 'B.E.',
+                                      division: 'Div C',
+                                      timing: '2:00-3:00',
                                       colour: Colors.tealAccent[400],
                                       nextScreenCallback: () {
                                         Navigator.pushNamed(context, Termworkpage.id);
