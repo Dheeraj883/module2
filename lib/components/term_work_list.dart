@@ -23,7 +23,7 @@ class _TermWorkListState extends State<TermWorkList> {
               title: termwork.name,
               maxMarks: termwork.maxMarks,
               addMarksCallback: () {
-                Navigator.pushNamed(context, StudentsMarks.id);
+                Navigator.pushNamed(context, StudentsMarks.id, arguments: termwork.maxMarks.toInt());
               },
               submitCallback: () {
                 showOkCancelAlertDialog(

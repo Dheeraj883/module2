@@ -23,7 +23,7 @@ class _UnitTestListState extends State<UnitTestList> {
               title: unitTest.name,
               maxMarks: unitTest.maxMarks,
               addMarksCallback: () {
-                Navigator.pushNamed(context, StudentsMarks.id);
+                Navigator.pushNamed(context, StudentsMarks.id, arguments: unitTest.maxMarks.toInt());
               },
               submitCallback: () {
                 showOkCancelAlertDialog(

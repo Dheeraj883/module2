@@ -23,7 +23,8 @@ class _AssignmentListState extends State<AssignmentList> {
               title: assignment.name,
               maxMarks: assignment.maxMarks,
               addMarksCallback: () {
-                Navigator.pushNamed(context, StudentsMarks.id);
+                Navigator.pushNamed(context, StudentsMarks.id,arguments: assignment.maxMarks.toInt());
+                // print(assignment.maxMarks);
               },
               submitCallback: () {
                 showOkCancelAlertDialog(

@@ -5,7 +5,7 @@ import 'package:ui_1/data/data_type.dart';
 class StudentData extends ChangeNotifier {
   List<Student> _students = [
     Student(name: 'Dheeraj Kumar',rollNumber: 1,marks: 10),
-    Student(name: 'Abhishek Mishra',rollNumber: 2,marks: 11),
+    Student(name: 'Abhishek Mishra',rollNumber: 2,marks: 9),
     Student(name: 'Sadhana Chaudhary',rollNumber: 3,marks: 10),
     Student(name: 'Prashant Shandilya',rollNumber: 4,marks: 10),
     Student(name: 'Varsha Singh',rollNumber: 5,marks: 10),

@@ -23,7 +23,7 @@ class _ExperimentListState extends State<ExperimentList> {
               title: experiment.name,
               maxMarks: experiment.maxMarks,
               addMarksCallback: () {
-                Navigator.pushNamed(context, StudentsMarks.id);
+                Navigator.pushNamed(context, StudentsMarks.id,arguments: experiment.maxMarks.toInt());
               },
               submitCallback: () {
                 showOkCancelAlertDialog(
