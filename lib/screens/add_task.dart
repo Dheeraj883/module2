@@ -44,9 +44,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
-              height: 10.0,
-            ),
+
             Row(
               children: [
                 Expanded(
@@ -101,28 +99,32 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
               ],
             ),
 
-            SizedBox(
-              height: 20.0,
-            ),
-            FlatButton(
-              child: Text(
-                'ADD',
-                style: TextStyle(
-                  color: Colors.white,
+
+            TextButton(
+              child: Container(
+                color: Colors.lightBlueAccent,
+                height: 30.0,
+                width: double.infinity,
+                child: Center(
+                  child: Text(
+                    'ADD',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ),
-              color: Colors.lightBlueAccent,
               onPressed: () {
                 if (widget.taskType == 'assignment') {
-                  Provider.of<AssignmentData>(context).addTask(newTitle: title, maxMarks: marks.toInt());
+                  Provider.of<AssignmentData>(context,listen: false).addTask(newTitle: title, maxMarks: marks.toInt());
                   Navigator.pop(context);
                 }
                 else if (widget.taskType == 'experiment') {
-                  Provider.of<ExperimentData>(context).addTask(newTitle: title, maxMarks: marks.toInt());
+                  Provider.of<ExperimentData>(context,listen: false).addTask(newTitle: title, maxMarks: marks.toInt());
                   Navigator.pop(context);
                 }
                 else if (widget.taskType == 'termwork') {
-                  Provider.of<TermWorkData>(context).addTask(newTitle: title, maxMarks:
+                  Provider.of<TermWorkData>(context,listen: false).addTask(newTitle: title, maxMarks:
                   marks.toInt());
                   Navigator.pop(context);
                 }
