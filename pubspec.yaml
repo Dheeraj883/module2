@@ -30,7 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   buttons_tabbar: ^1.1.1
   adaptive_dialog: ^0.9.4
-  provider: ^3.0.0+1
+  provider: ^5.0.0
   font_awesome_flutter: ^8.11.0
 
 dev_dependencies:
