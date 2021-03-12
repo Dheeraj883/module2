@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:ui_1/components/student_marks_card.dart';
 import 'package:ui_1/data/student_data.dart';
 
-
 class StudentList extends StatefulWidget {
   final int maxMarks;
   StudentList({this.maxMarks});
@@ -12,12 +11,6 @@ class StudentList extends StatefulWidget {
 }
 
 class _StudentListState extends State<StudentList> {
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    print(widget.maxMarks);
-  }
   @override
   Widget build(BuildContext context) {
     return Consumer<StudentData>(
